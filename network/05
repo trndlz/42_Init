@@ -1,1 +1,8 @@
+# A DNS server is a computer server that contains a database of public IP
+# addresses and their associated hostnames, and in most cases, serves to
+# resolve, or translate, those common names to IP addresses as requested.
+
+# dig (domain information groper) is a network administration command-line
+# tool for querying Domain Name System (DNS) servers.
+
 dig slash16.org | grep SERVER | awk '{print $3}' | cut -f1 -d"#"

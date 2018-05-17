@@ -1,1 +1,5 @@
-ifconfig en0 | grep "ether" | awk '{print $2}'
+# A media access control address (MAC address) of a device is a unique
+# identifier assigned to network interface controllers for communications
+# at the data link layer of a network segment.
+
+ifconfig p2p0 | grep "ether" | awk '{print $2}'

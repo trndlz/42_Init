@@ -1,0 +1,6 @@
+sudo kill $!
+
+# ou
+# sudo pkill tail
+
+# https://stackoverflow.com/questions/1624691/linux-kill-background-task

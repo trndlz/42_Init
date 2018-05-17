@@ -1,1 +1,4 @@
+# ifconfig is a system administration utility in Unix-like operating systems
+# for network interface configuration.
+
 ifconfig -l

@@ -1,0 +1,6 @@
+sudo iptables -A INPUT -s 10.0.0.0/8 -j ACCEPT
+
+# 10.0.0.0/8 IP addresses: 10.0.0.0 -- 10.255.255.255
+# -A : Append rule
+# -s : source
+# -j : Target of the rule (what to do if the packet matches it)

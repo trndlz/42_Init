@@ -1,1 +1,4 @@
+# A routing table is a data table stored in a router or a networked computer
+# that lists the routes to particular network destinations
+
 netstat -nr | grep default | awk 'NR==1{print $2}'

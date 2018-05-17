@@ -1,0 +1,3 @@
+sudo tail -f /var/log/syslog &
+
+# http://tldp.org/LDP/abs/html/x9644.html
