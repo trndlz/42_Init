@@ -1,0 +1,21 @@
+#!/bin/sh/
+
+# Type crontab -e
+# Add following rule 0 0 * * * /bin/bash /path/04
+
+md5sum /etc/crontab | awk '{print $1}' > /vagrant/current
+
+if [ -f /vagrant/backup ]
+then
+	if diff /vagrant/backup /vagrant/current 1>/dev/null
+	then
+		echo "/etc/crontab has not been changed since yesterday."
+	else
+		mail -s "/etc/crontab has been modified since yesterday." root@localhost < /etc/crontab
+		echo "/etc/crontab has been modified since yesterday. A mail has been sent to root@localhost."
+		md5sum /etc/crontab | awk '{print $1}' > /vagrant/backup
+	fi
+else
+	md5sum /etc/crontab | awk '{print $1}' > /vagrant/backup
+	echo "First comparison. Log file created. Next comparison tomorrow !"
+fi

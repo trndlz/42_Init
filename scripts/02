@@ -8,8 +8,8 @@
 # | ----------- Hour (0 - 23)
 # ------------- Minute (0 - 59)
 
-# Line to add in Crontab
-# Type crontab -e
-# 0 4 * * 1 /bin/bash /path/02
-sudo apt-get update >> /var/log/update_script.log
-sudo apt-get upgrade >> /var/log/update_script.log
+# Type 'crontab -e'
+# Add line : 0 4 * * 1 /bin/bash /path/02
+# sh -c : Read from string. Necessary for sudo strings.
+# Writing rights of update_script.log to be changed (chmod a+w)
+sudo sh -c 'apt-get -qy update >> /var/log/update_script.log ; apt-get -qy upgrade >> /var/log/update_script.log ; apt-get -qy dist-upgrade >> /var/log/update_script.log'
