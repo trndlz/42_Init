@@ -1,3 +1,4 @@
+#!/bin/sh/
 # uptime -- show how long system has been running
 
 uptime

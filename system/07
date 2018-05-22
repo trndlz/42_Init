@@ -1,4 +1,7 @@
+#!/bin/sh/
+
 /usr/sbin/service ssh status | grep "Main" | awk ' {print $3} '
+
 # OR
 # cat /var/run/sshd.pid
 # A PID (i.e., process identification number) is an identification

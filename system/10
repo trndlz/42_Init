@@ -1,3 +1,4 @@
+#!/bin/sh/
 # http://how-to.wikia.com/wiki/How_to_display_all_partitions_in_the_computer_in_unix
 
 sudo /sbin/fdisk -l

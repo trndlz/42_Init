@@ -1,3 +1,4 @@
+#!/bin/sh/
 # Man Hostname
 # The hostname utility prints the name of the current host.
 # The super-user can set the hostname by supplying an argument.

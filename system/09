@@ -1,2 +1,4 @@
+#!/bin/sh/
 #man who
+
 who --all
