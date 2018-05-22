@@ -1,3 +1,4 @@
+#!/bin/sh/
 # man host - DNS lookup utility
 
 host 10.51.1.81

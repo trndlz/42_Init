@@ -1,3 +1,4 @@
+#!/bin/sh/
 dig +short 42.fr @resolver1.opendns.com
 
 # 163.172.250.11

@@ -1,3 +1,4 @@
+#!/bin/sh/
 # A routing table is a data table stored in a router or a networked computer
 # that lists the routes to particular network destinations
 

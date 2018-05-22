@@ -1,1 +1,3 @@
+#!/bin/sh
+# Check : Parameters > Network > Ethernet > Advanced > MAC Adress
 ifconfig en0

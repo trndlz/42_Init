@@ -1,3 +1,4 @@
+#!/bin/sh/
 # A DNS server is a computer server that contains a database of public IP
 # addresses and their associated hostnames, and in most cases, serves to
 # resolve, or translate, those common names to IP addresses as requested.
