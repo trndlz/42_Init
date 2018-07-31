@@ -1,3 +1,3 @@
 # init
 
-Introduction to system and network administration.
+42 Project: Introduction to system and network administration.
